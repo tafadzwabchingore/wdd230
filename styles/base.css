@@ -6,25 +6,37 @@ header,
 main,
 footer {
     max-width: 640px;
-    margin: 1rem auto;
+    margin: 0rem auto;
     border: 1px solid #bbb;
     padding: 1rem;
-    background-color: #e6f2ff;
+    background-color: rgb(253, 252, 253);
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
+    /* Center horizontally */
 }
 
 section {
     padding: 1rem;
-    background-color: #fff;
+    background-color: rgb(208, 4, 208);
+}
+
+h3 {
+    background-color: rgb(125, 0, 125);
+    color: white;
+    padding: 1rem;
 }
 
 nav {
-    background-color: #36454f;
+    display: flex;
+    flex-direction: column;
+    /* Mobile view */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(208, 4, 208);
     margin: 0 auto;
     max-width: 800px;
 }
@@ -43,4 +55,8 @@ nav a {
 
 nav a:hover {
     border: 1px solid #fff;
+}
+
+footer {
+    background-color: rgb(250, 110, 250);
 }

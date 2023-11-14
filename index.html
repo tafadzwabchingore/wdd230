@@ -7,13 +7,19 @@
     <title>[Tafadzwa Chingore] - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="Tafadzwa Chingore`s WDD 230 - Web Frontend Development course assignment portal">
     <meta name="author" content="Tafadzwa Chingore">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/download (1).htm">
+    <meta property="og:title" content="[Tafadzwa Chingore] - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.hararepost.co.zw/images/Mbuya-Nehanda-Stret.jpg">
+    <meta property="og:url" content="http://127.0.0.1:5500/index.html">
 </head>
 
 <body>
     <header>
-        <img src="profile.jpg" alt="Tafadzwa Chingore">
+        <img src="images/profile.jpg" alt="Tafadzwa Chingore">
         <h1>Tafadzwa Chingore</h1>
     </header>
     <nav>
@@ -29,21 +35,25 @@
             <ul>
                 <li>Week 01: <a href="#">#</a></li>
                 <li>Week 02: <a href="#">#</a></li>
-                <li>Week 03: <a href="#">#</a></li>
+                <li>
+                    Week 03: <a href="week03/images/landscape.webp">WebP</a>
+                    <a href="week03/lazyload.html">Lazy Load</a>
+                </li>
                 <li>Week 04: <a href="#">#</a></li>
                 <li>Week 05: <a href="#">#</a></li>
                 <li>Week 06: <a href="#">#</a></li>
                 <li>Week 07: <a href="#">#</a></li>
             </ul>
         </section>
-        <section>
+        <section class="card">
             <h3>Information</h3>
         </section>
     </main>
     <footer>
-        <p>&copy;2023 ✨Tafadzwa Chingore✨ Harare, Zimbabwe🗺️</p>
-        <p>id="lastModified"</p>
+        <p>&copy;<span id="currentYear"></span> ✨Tafadzwa Chingore✨ Harare, Zimbabwe📍</p>
+        <p>Last modified: <span id="lastModified"></span></p>
     </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 
 </html>

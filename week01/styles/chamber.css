@@ -3,15 +3,16 @@ body {
 }
 
 header {
-    background-color: blue;
-    color: whitesmoke;
+    background-color: #DBCBD8;
+    color: #101935;
 }
 
-h2 {
-    color: black;
+h2,
+h3 {
+    font-family: 'Lobster', sans-serif;
+    color: #101935;
 }
 
 li {
-    background-color: rgb(250, 250, 139);
     color: black;
 }
