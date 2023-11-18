@@ -9,14 +9,27 @@ footer {
     margin: 0rem auto;
     border: 1px solid #bbb;
     padding: 1rem;
-    background-color: rgb(253, 252, 253);
+    background-color: rgb(247, 201, 247);
+
+}
+
+h1 {
+    text-align: right;
+}
+
+h2 {
+    justify-content: right;
+}
+
+img {
+    width: 180px;
+    height: 180px;
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
-    /* Center horizontally */
 }
 
 section {
@@ -32,17 +45,24 @@ h3 {
 
 nav {
     display: flex;
-    flex-direction: column;
-    /* Mobile view */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: rgb(208, 4, 208);
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 673px;
 }
 
 nav ul {
     list-style-type: none;
+}
+
+li a {
+    color: white;
+}
+
+li a:hover {
+    background-color: rgb(75, 1, 75);
 }
 
 nav a {
@@ -51,12 +71,15 @@ nav a {
     text-align: center;
     padding: 1rem;
     text-decoration: none;
+    color: white;
 }
 
 nav a:hover {
     border: 1px solid #fff;
+    background-color: rgb(255, 3, 255);
 }
 
+
 footer {
-    background-color: rgb(250, 110, 250);
+    background-color: - rgb(250, 110, 250);
 }
