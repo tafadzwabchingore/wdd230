@@ -1,40 +1,58 @@
 body {
     font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 header,
 main,
 footer {
-    max-width: 640px;
-    margin: 0rem auto;
+    max-width: 100%;
+    margin: 0 auto;
     border: 1px solid #bbb;
     padding: 1rem;
     background-color: rgb(247, 201, 247);
 
 }
 
+header {
+    height: 110px;
+}
+
 h1 {
-    text-align: right;
+    position: absolute;
+    top: 25px;
+    right: 480px;
+    font-family: 'Lobster', sans-serif;
 }
 
 h2 {
-    justify-content: right;
+    text-decoration: underline;
+    font-family: 'Lobster', sans-serif;
 }
 
 img {
-    width: 180px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 400px;
 }
 
 main {
-    display: grid;
+    /*display: grid;*/
     grid-template-columns: 1fr;
     grid-gap: 1rem;
+    background-color: white;
 }
 
 section {
     padding: 1rem;
     background-color: rgb(208, 4, 208);
+}
+
+.card {
+    width: 400px;
+    height: 400px;
 }
 
 h3 {
@@ -50,7 +68,7 @@ nav {
     align-items: center;
     background-color: rgb(208, 4, 208);
     margin: 0 auto;
-    max-width: 673px;
+    max-width: 1033px;
 }
 
 nav ul {
@@ -67,19 +85,42 @@ li a:hover {
 
 nav a {
     display: block;
-    color: #fff;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
     color: white;
+    font-size: large;
+    margin-left: 5rem;
 }
 
 nav a:hover {
     border: 1px solid #fff;
     background-color: rgb(255, 3, 255);
+    width: 300px;
+}
+
+.hero img {
+    width: 960px;
+    height: 450px;
+}
+
+iframe {
+    position: relative;
+    bottom: 1px;
+}
+
+.herolabel {
+    position: absolute;
+    top: 800px;
+    left: 450px;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
 }
 
 
 footer {
-    background-color: - rgb(250, 110, 250);
+    background-color: rgb(250, 110, 250);
 }
