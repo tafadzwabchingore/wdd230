@@ -1,44 +1,53 @@
-[
-    {
-        "companyName": "FoodBloom",
-        "address": "St Paul's Musami",
-        "phoneNumber": "+263 71 383 8389",
-        "subscriptionLevel": ""
-    },
-    {
-        "companyName": "AnnaRose Investments",
-        "address": "3939 Musika St, Harare, Zimbabwe",
-        "phoneNumber": "+263 77 400 0040",
-        "subscriptionLevel": ""
-    },
-    {
-        "companyName": "Vasikana Vemarokwe",
-        "address": "St Paul's Musami",
-        "phoneNumber": "+263 71 383 8389",
-        "subscriptionLevel": ""
-    },
-    {
-        "companyName": "FoodBloom",
-        "address": "St Paul's Musami",
-        "phoneNumber": "+263 71 383 8389",
-        "subscriptionLevel": ""
-    },
-    {
-        "companyName": "FoodBloom",
-        "address": "St Paul's Musami",
-        "phoneNumber": "+263 71 383 8389",
-        "subscriptionLevel": ""
-    },
-    {
-        "companyName": "FoodBloom",
-        "address": "St Paul's Musami",
-        "phoneNumber": "+263 71 383 8389",
-        "subscriptionLevel": ""
-    },
-    {
-        "companyName": "FoodBloom",
-        "address": "St Paul's Musami",
-        "phoneNumber": "+263 71 383 8389",
-        "subscriptionLevel": ""
-    }
-]
+{
+    "members": [
+        {
+            "companyName": "FoodBloom",
+            "address": "St Paul's Musami",
+            "phoneNumber": "+263 71 986 5408",
+            "subscriptionLevel": "",
+            "image": "maropafadzo.png"
+        },
+        {
+            "companyName": "AnnaRose Investments",
+            "address": "3939 Musika St, Harare, Zimbabwe",
+            "phoneNumber": "+263 77 400 0040",
+            "subscriptionLevel": "",
+            "image": "zapf.jpg"
+        },
+        {
+            "companyName": "Once Upon A Story Created",
+            "address": "M1-39 Nelson Mandela St, Harare, Zimbabwe",
+            "phoneNumber": "+263 78 508 3099",
+            "subscriptionLevel": "",
+            "image": "pickaparty.jpg"
+        },
+        {
+            "companyName": "The Tribe Called",
+            "address": "No. 3 Ok Kwame Nkuruma St, Harare, Zimbabwe",
+            "phoneNumber": "+263 78 351 3390",
+            "subscriptionLevel": "",
+            "image": "placeholder.png"
+        },
+        {
+            "companyName": "Tendo Pvt Ltd",
+            "address": "21 Birmingham Road, Harare, Zimbabwe",
+            "phoneNumber": "+024 2774780",
+            "subscriptionLevel": "",
+            "image": "tendo.jpg"
+        },
+        {
+            "companyName": "ZAPF",
+            "address": "3 Penn Place Close Strathaven, Harare, Zimbabwe",
+            "phoneNumber": "+263 77 617 4138",
+            "subscriptionLevel": "",
+            "image": "zapf.jpg"
+        },
+        {
+            "companyName": "Maropafadzo Energy",
+            "address": "2 Chishawasha Rd, Harare, Zimbabwe",
+            "phoneNumber": "+263 77 942 7932",
+            "subscriptionLevel": "",
+            "image": "maropafadzo.png"
+        }
+    ]
+}
