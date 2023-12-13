@@ -12,5 +12,5 @@ async function getLinks() {
 getLinks();
 
 function displayLinks(weeks) {
-    // Code to be generated
+
 }
