@@ -1,0 +1,93 @@
+body {
+    font-family: 'Faculty Glyphic', sans-serif;
+}
+
+* {
+    
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    background-color: #f97ff9;
+	padding: 20px;
+	/*border: 1px solid rgba(0, 0, 0, 0.1);*/
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Aligns items vertically center */
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.container img {
+    margin-right: 10px; /* Adds space between the image and text */
+    align-items: center;
+}
+
+nav a {
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* a is a for transparency and produces lighter color */
+}
+
+nav .active {
+    background-color: rgba(0, 0, 0, 0.3); /* produces darker color*/
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+	max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--secondary-color);
+    grid-row: 2;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 0.8em;
+    margin-inline-start: 5%;
+    margin-inline-end: 5%;
+    font-weight: bold;
+    unicode-bidi: isolate;
+	border-radius: 2em;
+    background-color: plum;
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.card {
+    text-align: center;
+    padding: 0 25px 25px 25px;
+    margin: 10px;
+    border: #bc25a8 1px solid;
+    border-radius: 0.5em;
+}
+
+footer {
+    text-align: center;
+    background-color:rgb(58, 1, 58);
+    color: white;
+    padding: 1.5em;
+}

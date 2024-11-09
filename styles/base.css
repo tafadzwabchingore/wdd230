@@ -1,0 +1,113 @@
+body {
+  font-family: "Faculty Glyphic", sans-serif;
+  max-width: 1200px;
+  width: 100%;
+  min-width: min-content; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  background-color: plum;
+}
+
+.profile {
+  width: 100px;
+  margin: 25px;
+  border-radius: 5px;
+  justify-self: end;
+}
+
+header h1 {
+  padding: 25px;
+}
+
+nav {
+  background-color: rgb(96, 2, 96);
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* a is a for transparency and produces lighter color */
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.3); /* produces darker color*/
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h2:after {
+  content: " ";
+  display: block;
+  border: 1px solid #868883;
+}
+
+.card {
+
+    border: #bc25a8 1px solid;
+    border-radius: 0.5em;
+    margin-bottom: 5px;
+}
+
+.card h3 {
+  background-color: plum;
+  text-align: center;
+  padding: 5px;
+  margin-top: 0;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.card li {
+  padding: 1px;
+}
+
+.card p {
+  padding-left: 1rem;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  align-items: center;
+  background-color: #892d7c;
+}
+
+footer p {
+  color: #ffffff;
+  margin: 3px;
+}
+
