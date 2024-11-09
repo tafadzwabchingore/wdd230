@@ -1,0 +1,25 @@
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    color: green;
+}
+
+header {
+        text-align: center;
+        background-color: white;
+}
+
+section {
+    background-color: red;
+    text-align: center;
+}
+
+aside {
+    text-align: center;
+    background-color: yellow;
+    color: black;
+    padding: 2em 2em 2em;
+}
