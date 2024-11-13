@@ -14,6 +14,21 @@ header {
   background-color: plum;
 }
 
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+
+.dark-mode {
+	background-color: #000;
+	color: #fff;
+	border-color: #eee; 
+}
+
 .profile {
   width: 100px;
   margin: 25px;
@@ -52,6 +67,34 @@ nav a:hover {
 
 .active {
   background-color: rgba(0, 0, 0, 0.3); /* produces darker color*/
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active::before { 
+	content: "📍";  /* just a wayfinding symbol for the user */
 }
 
 main {
