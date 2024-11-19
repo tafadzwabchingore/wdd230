@@ -1,0 +1,216 @@
+@media only screen and (min-width: 765px) {
+  :root{
+      --background-white: rgb(240, 240, 240);
+      --color-two: yellow;
+      --color-one: yellow;
+      --color-three: green;
+      --background-color-primary: rgb(77, 161, 103);
+      --hook-green: rgb(90, 139, 94) ;
+    }
+
+  header{
+      margin: 0 auto;
+      width: 100%;
+  }
+  header div {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      
+      max-width: 80%;
+      height: auto;
+      
+  }
+  
+  .Concord-logo {
+      grid-row: 1;
+      grid-column: 2/4;
+      width: 100%;
+      max-height: 350px;
+      z-index: 2;
+  }
+  
+  #myBtn {
+      display: none;
+  }
+
+  nav ul.menu-dirrectory{
+    background-color: green ;
+      margin: 0 auto;
+      margin-left: 0;
+      margin-right: 0;
+      list-style: none;
+      width: 90%;
+      position: relative;
+      margin: 0 auto;
+      margin-right: auto;
+      text-align: center;
+  }
+  ul.menu-dirrectory, ul.menu-dirrectory.open {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      list-style: none;
+  }
+  
+  nav ul.menu-dirrectory li a.button-design, nav ul.menu-dirrectory.open li a.button-design {
+      padding: 10px 36px; /* Adjust padding for responsiveness */
+      width: auto; /* Allow the button width to adjust based on content */
+      margin-top: 1em;
+      margin-bottom: .5em;
+      margin-left: 0;
+      margin-right: 0;
+      border: 3px;
+      text-decoration: none;
+      background-color: green;
+      color: white;
+      cursor: pointer;
+      font-size: 20pt;
+      
+  
+  }
+  nav ul.menu-dirrectory li a.button-design:hover, nav ul.menu-dirrectory.open li a.button-design:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .button-design{
+      background-color: yellow ;
+      border: none;
+      font-size: 16px;
+      margin: 0;
+      cursor: pointer;
+      list-style-type: none;
+      }
+
+/* ------------------------------I am now starting to code the 3 picture boxes here */
+      .photos{
+          display: flex;
+          justify-content:space-evenly;
+          height: 20em;
+      }
+      .photo-frames:hover{
+          transform: scale(.90); /* Increase the scale factor for a slight growth effect */
+        }
+      .photo-frames{
+          background-color: var(--color-two);
+          margin-top: 2em;
+          margin-left: 5px;
+          margin-right: 5px;
+          height: auto;
+          width: 200px;
+          cursor: pointer;
+          transition: width 1s, height 1s, transform 2s;;
+      }
+      .framed-imgs{
+          width: 150px;
+          height: 100px;
+        }
+
+        .quote-message {
+          font-variant: normal;
+          background-color: yellow;
+          border-radius: 0;
+          padding: 80px 20px;
+          border: 4px solid green;
+        }
+
+          /* --------------------------------------------------------------- */
+        main h4{
+          text-align:center;
+          font-size: 20pt;
+        }
+
+        #calling-Action{
+  
+          margin: 0 auto;
+          width: 60%;
+          height: auto;
+          background-color: yellow; 
+          font-size: 13pt;
+          padding: 50px;
+          border: 5px solid green;
+          cursor: pointer;
+          transition: width 1s, height 1s, transform 2s;
+          }
+
+          #calling-Action:hover {
+            transform: scale(.90); /* Increase the scale factor for a slight growth effect */
+          }
+        
+        #calling-Action h1{
+          font-weight: 900;
+          font-size: 1.5em;
+        }
+        .chamber-div{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr;
+        }
+        .about-Our-Chamber{
+          grid-column: 2/3;
+          grid-row: 1;
+          padding: 100px 41px;
+          background-color: #f0f0f0;
+          border: 10px solid green;
+          font-size: 12pt;    
+      }
+      .about-Our-Chamber p{
+          font-size: 12pt;
+          text-align: left;
+          line-height: 1.75;
+          max-width: 95%;
+          margin: 10px auto;
+
+      }
+      .about-Our-Chamber-img{
+          margin: 5em auto; 
+          padding: 50px 15px;
+          grid-column: 1/2;
+          grid-row: 1;
+          height:auto;
+      }
+      .events-container {
+          display: block;
+          margin-top: 1em;
+          width: 30%;
+          height: 18em;
+          border: 1px green;
+          margin: 0 auto;
+          color: var(--color-two);
+          position: absolute;
+          top: 30%;
+          left: 60%;
+      }
+      .events-section{
+          display: grid;
+          margin-top: 0;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr;
+          padding: 20px 20px;
+          margin-bottom: 5em;
+          position: relative;
+          border: none;
+          grid-column-gap: 3em;
+      }
+      .text-Box{
+          grid-column: 1/2;
+          grid-row: 1/3;
+          padding: 20px;
+          border: 10px solid green;
+          height: 100%;
+          
+      }
+      .event-place-holder{
+          padding: 20px 20px;
+          grid-column: 2/3;
+          grid-row: 1;  
+      }
+      .calander-home{
+        background-color: var(--background-white);
+        padding: 20px;
+        border: 10px solid green;
+        height: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+    }

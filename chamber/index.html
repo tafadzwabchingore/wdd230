@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development 1 Chamber of Commerce Home Page">
+    <meta name="author" content="Tafadzwa Chingore">
+    <meta property="og:title" content="Tafadzwa Chingore - WDD 230 - Web Frontend Development Profile">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/561f3483e4b0930b096cad9b/1506680649152-K8MCM353GS0UQR1X0AOF/Harare-1447+copy.jpg?format=1500w">
+    <meta property="og:url" content="https://tafadzwabchingore.github.io/wdd230/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="icon" href="chamber-favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <title>Zimbabwe National Chamber of Commerce Home Page</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img class="hero" src="images/hero.jpg" alt="Zimbabwe National Chamber of Commerce Staff" loading="lazy">
+        </div>
+        <nav>
+            <button id="myBtn"></button>
+            <ul class="menu-dirrectory">
+            <li><a class="button-design" href="../index.html">Home</a></li>
+            <li><a class="button-design" href="./directory.html">Directory</a></li>
+            <li><a class="button-design" href="./discover.html">Discover</a></li>
+            <li><a class="button-design" href="./join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Zimbabwe National Chamber of Commerce</h1>
+        <div class="underline"></div>
+        <div class="photos">
+        <div class="photo-frames" id="top-frame">
+
+            <h3>Promoting Frameworks and Networks to Advance Women Entrepreneurs</h3>
+            <img class="framed-imgs top-main-imgs" src="images/women.jpg" alt="opening photo 3"  width="300" height="200" loading="lazy">
+        </div>
+        
+        <div class="photo-frames" id="middle-frame">
+            <h3>Promoting Sustainable Industrialization and Climate Smart Business Growth</h3>
+            <img class="framed-imgs top-main-imgs" src="images/sustainability.jpg" alt="opening photo 2"  width="300" height="200"  loading="lazy">
+        </div>
+        
+        <div class="photo-frames" id="bottom-frame" >
+            <h3>Empower your Enterprises and Growth Through Chamber Affiliations</h3>
+                <img class="framed-imgs top-main-imgs" src="images/affiliation.jpg" alt="opening photo 1"  width="300" height="200" loading="lazy">
+        </div>
+</div>
+    <div class="underline"></div>
+    <h2 class="quote-message">"Unlock New Opportunities, Foster Growth, and Discover the Power of Partnership and Prosperity."</h2>
+    <div class="underline"></div>
+    
+    <h2>Weather Forecast</h2>
+    <div class="weather-forecast">
+        <p>Weather Data Will be Displayed Here.</p>
+    </div>
+    <div class="underline"></div>
+    <div class="chamber-div">
+        <div class="about-Our-Chamber">
+            <h2>Our Vission</h2>
+            <p>To be an upbeat membership-based organization that lobbies and drives for the growth of the Zimbabwean economy. </p>
+            <br>
+            <h2>Our Mission</h2>
+            <p>The Zimbabwe National Chamber of Commerce aims to be a leader in business development in the national economy 
+                and a channel of communication between business and the various authorities in Zimbabwe.</p>
+        </div>
+            <div class="about-Our-Chamber-img"><img src="images/zncc.jpg" alt="zncc building" loading="lazy"></div>
+    </div>
+    <div>
+
+        <!-- this is where i will place random members with gold and silver status -->
+        <h2 class="members">Members' Spotlight</h2>
+        <p>Members Displayed Here</p>
+        <div class="underline"></div>
+        <div class="members-container">
+            <!-- Members will be dynamically inserted here by JavaScript -->
+        </div>
+    </div>
+    <h3>learn more on our <a href="#">directory</a> page about how to join the chamber!</h3>
+    <div class="underline"></div>
+    <section class="event-box">
+    <h2>Upcoming Events</h2>
+    <div class="events-section">
+        <div class="text-Box">
+            <h3>Empowering Zimbabwean Businesses: A Comprehensive Training on Intellectual Property by ZNCC and ARIPO</h3>
+            <p>Unlocking the Power of Intellectual Property</p>
+            <br>
+            <p>Dates</p>
+            <p>29 November - 1 December</p>
+
+            <p>This training will serve as an invaluable platform for participants to dive deeply into the world of IP.</p>
+            <p>Understanding the nuances of Intellectual Property Rights is crucial in today's competitive business landscape.</p>
+            <p>This program is tailored to provide a foundational understanding as well as advanced insights into the strategic 
+                application of IP rights.</p>
+            <br>
+            <p>Who Should Attend?</p>
+            <p>This training is ideal for business owners, managers, entrepreneurs, legal advisors, and anyone interested in 
+                expanding their knowledge of intellectual property and its application in business.</p>
+            <br>
+            <p>Registration Details</p>
+            <p>For more details on registration, fees, and the training schedule,
+                 please visit the <a href="#">ZNCC</a> website or <a href="#">contact us</a> directly via email or phone.</p>
+        </div>
+        <h2 class="calander-home">Current calender</h2>
+        <div class="events-container" id="eventsContainer"></div>
+    </div>
+    </section>
+        <div id="calling-Action">
+<!-- background picture needs to go behind the text -->
+            <h2>Come join us to jumpstart your business.</h2>
+        </div>
+        </main>
+        <div class="underline"></div>
+    <footer>
+        <img src="images/zncclogo.png" alt="ZNCC logo">
+        <p>We are an award-winning multinational organization. We believe in quality and standards worldwide.</p>
+        <p>National Office Address: 5 Orkney Road, Eastlea, Harare</p>
+        <p>Email Us: <a href="#">zncc@gmail.org</a></p>
+        <p>Call Us: +263 24 770 244 | +263 24 277 0551 | +263 71 507 0475</p>
+        <div class="underline"></div>
+        <br>
+        <p>&copy;<span id="currentyear"></span> 💻 Tafadzwa Chingore's WDD230 Course Project 💻 📍Harare, Zimbabwe 🌇</p>
+        <p>🦋Last Modified: <span id="lastModified"></span>🦋</p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>
