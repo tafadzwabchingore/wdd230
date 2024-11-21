@@ -12,7 +12,6 @@ header div {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    
     max-width: 80%;
     height: auto;
     
@@ -32,6 +31,7 @@ header div {
 
 nav ul.menu-dirrectory{
   background-color: plum ;
+  color: black;
     margin: 0 auto;
     margin-left: 0;
     margin-right: 0;

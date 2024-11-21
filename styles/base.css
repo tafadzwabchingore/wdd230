@@ -16,9 +16,9 @@ header{
 }
 
 header nav a {
-  color: var(--color-two);
   cursor: pointer;
-  background-color:var(--color-one);;
+  background-color:plum;
+  color: black;
 }
 
 #mode {
@@ -67,7 +67,7 @@ header h1 {
   }
   
   .button-design :hover {
-    background-color: rgba(255, 255, 255, 0.2); /* a is a for transparency and produces lighter color */
+    background-color: rgba(255, 255, 255, 0.3); /* a is a for transparency and produces lighter color */
   }
   
   nav ul.menu-dirrectory{
@@ -87,6 +87,7 @@ header h1 {
   
   #myBtn::before {
       content: "\2630";
+      background-color: rgba(0, 0, 0, 0.3); /* produces darker color*/
     }
     
     #myBtn.open::before {
@@ -121,6 +122,7 @@ header h1 {
 
 .active::before { 
 	content: "📍";  /* just a wayfinding symbol for the user */
+  background-color: rgba(0, 0, 0, 0.3); /* produces darker color*/
 }
 
 main {
