@@ -1,13 +1,14 @@
-const currentYear = new Date().getFullYear();
-console.log(currentYear);
-document.getElementById("currentyear").innerText = currentYear;
-document.getElementById('lastModified').innerText = document.lastModified;
+const date = new Date();
+const year = date.getFullYear();
+const author = `Devun Fox Durst`
+const country = `USA`
 
-const modeButton = document.querySelector("#mode");
-const body = document.querySelector("body");
-const main = document.querySelector("main");
+document.getElementById('dateTime').innerHTML
+=`&copy${year}`;
+document.getElementById('author').innerHTML=`Devun Fox Durst`;
+document.getElementById('country').innerHTML=`USA`;
 
-modeButton.addEventListener("click", () => {
-	body.classList.toggle('dark-mode');
-	main.classList.toggle('dark-mode');
-});
+// javaScript for last Modified
+const LastModif = document.lastModified;
+document.getElementById('modifiedTime').innerHTML
+=`Last modified: ${LastModif}`;

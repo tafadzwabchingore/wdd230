@@ -39,38 +39,26 @@ button.addEventListener('click', function() {
 
 
 button.addEventListener('click', () => { ... });*/
-
-const list = document.querySelector('ul');
-const input = document.querySelector('input');
+const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
+const list = document.querySelector('#list');
 
 button.addEventListener('click', () => {
-  if (input.value !== "") {
-    const myItem = input.value;
-    if (validChapters.includes(myItem)) {
-      const listItem = document.createElement('li');
-      const listText = document.createElement('span');
-      const listBtn = document.createElement('button');
+    if (input.value !== '') {
+        const li = document.createElement('li');
+        const deleteButton = document.createElement('button');
+        li.textContent = input.value;
+        deleteButton.textContent = 'X';
+        li.appendChild(deleteButton);
+        list.appendChild(li);
 
-      listItem.appendChild(listText);
-      listText.textContent = myItem;
-      listItem.appendChild(listBtn);
-      listBtn.textContent = '✖︎';
-      list.appendChild(listItem);
-
-      listBtn.addEventListener('click', () => {
-        list.removeChild(listItem);
-      });
-      input.value = '';
-      input.focus();
+        // Event listener for the delete button 
+        deleteButton.addEventListener('click', function () {
+            list.removeChild(li);
+            input.focus();
+        });
+        input.value = '';
+        input.focus();
     }
-    else {
-      alert("Invalid Chapter. Please enter a chapter from the Book of Mormon.")
-      input.focus();
-    } 
-  }
-  else {
-    alert("Please enter a chapter.");
-    input.focus();
-  }
-});
+}
+);
