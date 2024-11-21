@@ -7,11 +7,18 @@ body {
   margin-right: auto;
 }
 
-header {
-  display: grid;
+header{
+  display: block;
   grid-template-columns: 1fr 2fr;
   align-items: center;
+  width: 100%;
   background-color: plum;
+}
+
+header nav a {
+  color: var(--color-two);
+  cursor: pointer;
+  background-color:var(--color-one);;
 }
 
 #mode {
@@ -40,53 +47,72 @@ header h1 {
   padding: 25px;
 }
 
-nav {
-  background-color: rgb(96, 2, 96);
-  display: flex;
-  flex-direction: column;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-size: 1.2em;
-}
-
-nav li a {
-  display: block;
-  color: white;
-  padding: 5px;
-  text-decoration: none;
-}
-
-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* a is a for transparency and produces lighter color */
-}
-
 .active {
   background-color: rgba(0, 0, 0, 0.3); /* produces darker color*/
 }
 
 /* small view navigation */
-#menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: #000;
-	position: absolute;
-	top: 1rem;
-	left: 1rem;
-}
-
-#menu::before {
-	content: "☰";
-}
-
-#menu.open::before {
-	content: "❎";
-}
+.button-design{
+  background-color: plum;
+  border: 3px;
+  width: 70%;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 0px 5px -40px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  list-style-type: none;
+  }
+  
+  .button-design :hover {
+    background-color: rgba(255, 255, 255, 0.2); /* a is a for transparency and produces lighter color */
+  }
+  
+  nav ul.menu-dirrectory{
+      text-decoration: none;
+      list-style: none;
+  }
+  ul.menu-dirrectory {
+      display: none;
+      list-style-type: none;
+    }
+    
+    ul.menu-dirrectory.open {
+      display: block;
+      z-index: 2;
+    }
+  /* Make sure to include styles for the open state------------------------------------------------------ */
+  
+  #myBtn::before {
+      content: "\2630";
+    }
+    
+    #myBtn.open::before {
+      content: none;
+    }
+    
+    #myBtn.open::after {
+      content: "X";
+    }
+    
+    #myBtn {
+      font-size: 2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      width: auto;
+      height: 1rem;
+      text-align: right;
+      position: absolute;
+      top: 30%;
+      right: 0;
+  }
+  
+  li {
+    margin-top: .5em;
+  }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
