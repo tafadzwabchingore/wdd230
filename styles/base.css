@@ -1,6 +1,6 @@
 body {
   font-family: "Faculty Glyphic", sans-serif;
-  max-width: 1200px;
+  max-width: 749px;
   width: 100%;
   min-width: min-content; 
   margin-left: auto;
@@ -45,6 +45,37 @@ header nav a {
 
 header h1 {
   padding: 25px;
+}
+
+#hero-picture{
+  margin: 0 auto;
+  width: 90%;
+}
+
+.hero{
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1em;
+}
+.hero img {
+  margin-top: 1em;
+  width: 95%;
+  height: auto;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.hero span{
+  position: absolute;
+  bottom: 5%;
+  left: 25%;
+  right: 25%;
+  border: #D0C695 solid 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2px 5px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .active {

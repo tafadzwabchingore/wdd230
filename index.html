@@ -21,7 +21,7 @@
   <body>
     <header>
       <div id="mode">💡/🕶️</div>
-      <img class="profile" src="images/profile.jpg" alt="Tafadzwa Chingore's Profile">
+      <img class="profile" src="images/profile.webp" alt="Tafadzwa Chingore's Profile" loading="lazy">
       <h1>Tafadzwa Chingore</h1>
     </header>
     <button id="myBtn"></button>
@@ -33,6 +33,14 @@
       </ul>
     <br>
     <main>
+      <div class="hero">
+        <picture id="hero-picture">
+          <source media="(max-width: 400px)" srcset="images/nigeriatemple.webp">
+          <source media="(max-width: 1000px)" srcset="images/nigeriatemple-large.webp">
+          <img src="images/nigeriatemple-large.webp" alt="Image Settings" loading="lazy">
+        </picture>
+         <span>Aba Nigeria Temple</span>
+      </div>
       <h2>WDD 230: Web Frontend Development</h2>
       <section class="card">
         <h3>Learning Activities</h3>
@@ -49,15 +57,17 @@
       <section class="card">
         <h3>Information</h3>
         <p>Weather:</p>
-        <p>Number of Visits:</p>
+        <p>Number of Visits: <span class ="visits"></span></p>
       </section>
     </main>
     <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d949.7648928116156!2d30.97043108200726!3d-17.788897192530072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931af0000a69c9b%3A0xa3244a7cee421355!2sLeassah&#39;s%20Gourmet!5e0!3m2!1sen!2szw!4v1732268346868!5m2!1sen!2szw" width="730" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
       <p>&copy;<span id="currentyear"></span> 💻 Tafadzwa Chingore's WDD230 Course Project 💻 📍Harare, Zimbabwe 🌇</p>
       <p>🦋Last Modified: <span id="lastModified"></span>🦋</p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/getVisits.js"></script>
     <script src="scripts/menu.js"></script>
   </body>
 </html>
