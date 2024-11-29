@@ -93,6 +93,11 @@ main {
     appearance: none;
 }
 
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+}
+
 .wf1 input[type="submit"] {
     border: none;
     background-image: linear-gradient(red, rgb(121, 0, 0));
