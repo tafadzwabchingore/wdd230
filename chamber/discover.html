@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development 1 Chamber of Commerce Home Page">
+    <meta name="author" content="Tafadzwa Chingore">
+    <meta property="og:title" content="Tafadzwa Chingore - WDD 230 - Web Frontend Development Profile">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/561f3483e4b0930b096cad9b/1506680649152-K8MCM353GS0UQR1X0AOF/Harare-1447+copy.jpg?format=1500w">
+    <meta property="og:url" content="https://tafadzwabchingore.github.io/wdd230/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="icon" href="chamber-favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <title>Zimbabwe National Chamber of Commerce Home Page</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img class="hero" src="images/hero.jpg" alt="Zimbabwe National Chamber of Commerce Staff" loading="lazy">
+        </div>
+        <nav>
+            <button id="myBtn"></button>
+            <ul class="menu-dirrectory">
+            <li><a class="button-design" href="index.html">Home</a></li>
+            <li><a class="button-design" href="#">Directory</a></li>
+            <li><a class="button-design" href="#">Discover</a></li>
+            <li><a class="button-design" href="#">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Discover</h1>
+        <div class="underline"></div>
+        <!-- This is the top section -->
+        <div id="discover-grid">
+        <div class="top">
+            <div id="sidebar-content"></div>
+            <picture>
+                <source media="(max-width: 500px)" srcset="./images/cali-neighborhood.webp">
+                <img src="./images/cali-neighborhood-big.webp" alt="Image Settings" loading="lazy">
+            </picture>
+            <div class="Disc-Descript">
+                <h2>Zimbabwe National Chamber of Commerce</h2>
+                <p>Welcome to the Zimbabwe National Chamber of Commerce! 
+                    Zimbabwe National Chamber of Commerce is a non-profit making membership-based organization that provides services designed to support its members in business development.
+                    As an independent organisation, the ZNCC has represented the interests of its members for over 100 years especially through advocacy and provides a focus on business empowerment as the engine for economic growth. ZNCC also aims to be a leader in business development in the national economy and a channel of communication between business and the various authorities in Zimbabwe.  
+            </div>
+        </div>
+        <!-- This is the left section -->
+        <div class="left-side">
+            <div class="calender">
+                <h3 id="month">Month</h3>
+                <div id="calendar"></div>
+            </div>
+            
+            <div id="demographics">
+                <h3>🤝 Our Values</h3>
+                <p>HONESTY</p>
+                <p>INTEGRITY</p>
+                <p>ACCOUNTABILITY</p>
+                <p>FAIRNESS</p>
+                <p>COMPLIANCE WITH THE LAW</p>
+                <p>PROFESSIONALISM</p>
+            </div>
+            <div id="stat-data">
+                <div class="underline"></div>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="./images/data-picture-sm.webp">
+                    <source media="(max-width: 1400px)" srcset="./images/data-picture-md.webp">
+                <img src="./images/data-picture-lg.webp" alt="Image Settings" loading="lazy">
+                </picture>
+                <div class="underline"></div>
+                <h3>Statistical Data</h3>
+                <h4>Buisness climate:</h4>
+                <p>Concord boasts a robust business climate with a diverse range of industries driving economic growth. From technology and healthcare to manufacturing and retail, businesses of all sizes thrive in Concord's supportive ecosystem.</p>
+                <div class="underline"></div>
+                <h4>Workforce:</h4>
+                <p>Concord is home to a highly skilled and educated workforce, making it an attractive destination for businesses seeking top talent. With [percentage] of residents holding a bachelor's degree or higher, Concord offers a pool of skilled professionals ready to contribute to your company's success.</p>
+                <div class="underline"></div>
+                <h4>Consumer spending:</h4>
+                <p>Concord's residents have significant purchasing power, with a median household income of $130,276. This makes Concord an ideal market for businesses looking to tap into consumer spending and grow their customer base.</p>
+            </div>
+            <div class="underline"></div>
+        </div>
+        <div class="middle-divider"></div>
+        <!-- This is the right section -->
+        <div class="right-side">
+            <div class="event-tab">
+            <h2>Events</h2>
+            <div class="underline"></div>
+            <p>Concord offers an array of events and attractions that showcase the city's vibrant culture and unique character. From business networking events to community festivals, there's always something happening in Concord.</p>
+            <div class="underline"></div>
+        </div>
+            <h3>Ride before dawn</h3>
+            <picture>
+                <source media="(max-width: 650px)" srcset="./images/bike-riding-sm.webp">
+                <img src="./images/bike-riding.webp" alt="Image Settings" loading="lazy">
+             </picture>
+             <h3>Hiking Mountain Diablo</h3>
+            <picture>
+                <source media="(max-width: 650px)" srcset="./images/hiking-mt-sm.webp">
+                <img src="./images/hiking-mt-lg.webp" alt="Image Settings" loading="lazy">
+            </picture>
+            <h3>Community Retreat</h3>
+            <picture>
+                <source media="(max-width: 650px)" srcset="./images/retreat-sm.webp">
+                <img src="./images/retreat-big.webp" alt="Image Settings" loading="lazy">
+            </picture>
+
+            <h3>Concord Crab Feed</h3>
+            <picture>
+                <source media="(max-width: 650px)" srcset="./images/crab-feed-sm.webp">
+                <img src="./images/crab-feed.webp" alt="Image Settings" loading="lazy">
+            </picture>
+            <div class="underline"></div>
+        </div>
+    
+    </div>
+        <!-- This is the bottom section -->
+        <div class="bottom">
+            <span>Click here to Join the Community Today!</span>
+            <a href="./join.html">
+            <picture>
+                <source media="(max-width: 500px)" srcset="./images/join-today-sm.webp">
+                <source media="(max-width: 1000px)" srcset="./images/join-today-md.webp">
+                <img src="./images/join-today-lg.webp" alt="Image Settings" loading="lazy">   
+            </picture>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <img src="images/zncclogo.png" alt="ZNCC logo">
+        <p>We are an award-winning multinational organization. We believe in quality and standards worldwide.</p>
+        <p>National Office Address: 5 Orkney Road, Eastlea, Harare</p>
+        <p>Email Us: <a href="#">zncc@gmail.org</a></p>
+        <p>Call Us: +263 24 770 244 | +263 24 277 0551 | +263 71 507 0475</p>
+        <div class="underline"></div>
+        <br>
+        <p>&copy;<span id="currentyear"></span> 💻 Tafadzwa Chingore's WDD230 Course Project 💻 📍Harare, Zimbabwe 🌇</p>
+        <p>🦋Last Modified: <span id="lastModified"></span>🦋</p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>

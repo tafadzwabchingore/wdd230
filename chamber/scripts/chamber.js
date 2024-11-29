@@ -154,3 +154,127 @@ bottomframe.addEventListener('click', function() {
     // For example, you can redirect the user to a specific page
     window.location.href = './join.html';
 });
+
+//calander
+function createCalendar(year, month) {
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+  const firstDayIndex = new Date(year, month, 1).getDay();
+  const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const monthElement = document.getElementById('month');
+  monthElement.textContent = `${monthNames[month]} ${year}`;
+
+  const calendar = document.getElementById('calendar');
+  calendar.innerHTML = ''; // Clear previous content
+
+  // Create table
+  const table = document.createElement('table');
+
+  // Create table header
+  const header = document.createElement('tr');
+  const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  days.forEach(day => {
+      const th = document.createElement('th');
+      th.textContent = day;
+      header.appendChild(th);
+  });
+  table.appendChild(header);
+
+  // Create table rows and cells
+  let date = 1;
+  const today = new Date();
+  const currentDay = today.getDate();
+  for (let i = 0; i < 6; i++) {
+      const row = document.createElement('tr');
+      for (let j = 0; j < 7; j++) {
+          const cell = document.createElement('td');
+          if (i === 0 && j < firstDayIndex) {
+              cell.textContent = ''; // Empty cells before the first day of the month
+          } else if (date > daysInMonth) {
+              break; // Exit loop when all days have been added
+          } else {
+              cell.textContent = date;
+              if (date === currentDay) {
+                  cell.classList.add('current-day'); // Highlight current day
+              }
+              date++;
+          }
+          row.appendChild(cell);
+      }
+      table.appendChild(row);
+  }
+  
+  calendar.appendChild(table);
+}
+
+// Example usage
+const today = new Date();
+const currentYear = today.getFullYear();
+const currentMonth = today.getMonth();
+createCalendar(currentYear, currentMonth);
+
+//time stamp
+function setTimestamp() {
+  var currentDate = new Date();
+  var timestamp = currentDate.toISOString(); // Convert to ISO 8601 format
+  document.getElementById("timestamp").value = timestamp;
+  console.log("Timestamp set: " + timestamp); // Log the timestamp
+}
+
+// Call the setTimestamp function when the page loads
+window.onload = setTimestamp;
+
+document.addEventListener("DOMContentLoaded", function() {
+  var currentDate = new Date();
+  var dayOfWeek = currentDate.getDay();
+  var currentHour = currentDate.getHours();
+
+  var banner = document.getElementById("chamberBanner");
+
+  if (dayOfWeek >= 1 && dayOfWeek <= 3 && currentHour < 19) {
+    banner.style.display = "Flex";
+  } else {
+    banner.style.display = "none";
+  }
+
+  var closeBtn = document.getElementById("closeBannerBtn");
+  closeBtn.addEventListener("click", function() {
+    banner.style.display = "none";
+  });
+});
+
+//local storage
+document.addEventListener("DOMContentLoaded", function() {
+  // Get the current date
+  var currentDate = new Date();
+  
+  // Retrieve the last visit date from localStorage
+  var lastVisitDate = localStorage.getItem("lastVisitDate");
+  
+  if (lastVisitDate === null) {
+      // First visit
+      localStorage.setItem("lastVisitDate", currentDate);
+      document.getElementById("sidebar-content").innerText = "Welcome! Let us know if you have any questions.";
+  } else {
+      // Calculate the difference in days between the current and last visit
+      var millisecondsPerDay = 1000 * 60 * 60 * 24;
+      var differenceInTime = currentDate - new Date(lastVisitDate);
+      var differenceInDays = Math.floor(differenceInTime / millisecondsPerDay);
+      
+      if (differenceInDays === 0) {
+          // Less than a day
+          document.getElementById("sidebar-content").innerText = "Back so soon! Awesome!";
+      } else {
+          // More than a day
+          var message;
+          if (differenceInDays === 1) {
+              message = "You last visited 1 day ago.";
+          } else {
+              message = "You last visited " + differenceInDays + " days ago.";
+          }
+          document.getElementById("sidebar-content").innerText = message;
+      }
+      
+      // Update the last visit date in localStorage
+      localStorage.setItem("lastVisitDate", currentDate);
+  }
+});
