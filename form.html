@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tafadzwa Chingore's WDD 230 - Web Frontend Development Course Assignment Portal">
+    <meta name="author" content="Tafadzwa Chingore">
+    <meta property="og:title" content="Tafadzwa Chingore - WDD 230 - Web Frontend Development Profile">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/561f3483e4b0930b096cad9b/1506680649152-K8MCM353GS0UQR1X0AOF/Harare-1447+copy.jpg?format=1500w">
+    <meta property="og:url" content="https://tafadzwabchingore.github.io/wdd230/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <title>Tafadzwa Chingore - WDD 230 - Web Frontend Development</title>
+  </head>
+  <body>
+    <header>
+      <div id="mode">💡/🕶️</div>
+      <img class="profile" src="images/profile.webp" alt="Tafadzwa Chingore's Profile" loading="lazy">
+      <h1>Tafadzwa Chingore</h1>
+    </header>
+    <button id="myBtn"></button>
+      <ul class="menu-dirrectory">
+        <li><a class="button-design" href="index.html">Home</a></li>
+        <li><a class="button-design" href="chamber/index.html">Chamber</a></li>
+        <li><a class="button-design" href="week01/chamber-site-plan.html">Site Plan</a></li>
+        <li><a class="button-design" href="">Form</a></li>
+      </ul>
+    <br>
+    <main>
+        <form method="get" action="record.html" class="wfd1">
+          <fieldset>
+            <legend>Rate This Page</legend>
+            <label>Username* <input type="text" id="username" name="username" required></label>
+            <label>Password* <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" placeholder="Must be 8 characters long" required></label>
+            <label>Re-enter Password* <input type="password" id="password2" name="password2" pattern="[a-zA-Z0-9]{8,}" placeholder="Must be 8 characters long" required></label>
+            <label>Email* <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid email address" required></label>
+            <div id="rangevalue">1</div>
+            <label>Page Rating:
+              <input type="range" id="range" name="range" min="1" max="10" step="1" list="rangevalues"></label>
+              <datalist id="rangevalues">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </datalist>
+          </fieldset>
+          <input type="submit" value="Rate Page">
+        </form>
+    </main>
+      
+    <footer>
+      <p>&copy;<span id="currentyear"></span> 💻 Tafadzwa Chingore's WDD230 Course Project 💻 📍Harare, Zimbabwe 🌇</p>
+      <p>🦋Last Modified: <span id="lastModified"></span>🦋</p>
+    </footer>
+    <script src="scripts/form.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/getVisits.js"></script>
+    <script src="scripts/menu.js"></script>
+  </body>
+</html>

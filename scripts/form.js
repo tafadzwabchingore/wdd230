@@ -20,7 +20,7 @@ function checkSame() {
 }
 
 const rangevalue = document.getElementById("rangevalue");
-const range = document.getElementById("r");
+const range = document.getElementById("range");
 
 // RANGE event listener
 range.addEventListener('change', displayRatingValue);
