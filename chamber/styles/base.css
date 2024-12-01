@@ -535,10 +535,12 @@ form{
 }
 .join-h1{
   color: green;
-  width: 80%;
+  font-weight: 900;
+  font-size: 40px;
+  width: 100%;
   margin: 0 auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0em;
+  margin-bottom: 0em;
 }
 .wf1 fieldset label.first-label{
   font-weight: bold;
@@ -577,6 +579,7 @@ form{
 .membership-details li {
   margin-bottom: 2em; /* Add spacing between list items */
   font-size: 16px; /* Adjust font size as needed */
+  border: 1px solid red;
 }
 .membership-details img{
   width: 100%;
@@ -587,10 +590,10 @@ form{
 
 /* Example: Color each list item differently */
 .membership-details li:nth-child(odd) {
-  background-color: #e0e0e0; /* Light gray background for odd items */
+  background-color: yellow; /* Light gray background for odd items */
 }
 .membership-details li:nth-child(even) {
-  background-color: #d0d0d0; /* Dark gray background for even items */
+  background-color: yellow; /* Dark gray background for even items */
 }
 
 /* new code for week 5 */
@@ -612,10 +615,10 @@ form{
 }
 
 .directory li:nth-child(odd) {
-  background-color: #e0e0e0; /* Light gray background for odd items */
+  background-color: yellow; /* Light gray background for odd items */
 }
 .directory li:nth-child(even) {
-  background-color: #d0d0d0; /* Dark gray background for even items */
+  background-color: yellow; /* Dark gray background for even items */
 }
 .directory-menu ul{
   list-style-type: none;
