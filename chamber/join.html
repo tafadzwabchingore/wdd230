@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development 1 Chamber of Commerce Home Page">
+    <meta name="author" content="Tafadzwa Chingore">
+    <meta property="og:title" content="Tafadzwa Chingore - WDD 230 - Web Frontend Development Profile">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/561f3483e4b0930b096cad9b/1506680649152-K8MCM353GS0UQR1X0AOF/Harare-1447+copy.jpg?format=1500w">
+    <meta property="og:url" content="https://tafadzwabchingore.github.io/wdd230/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="icon" href="chamber-favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <title>Zimbabwe National Chamber of Commerce Home Page</title>
+</head>
+<body>
+    <header>
+
+        <br>
+        <nav>
+            <button id="myBtn"></button>
+            <ul class="menu-dirrectory">
+            <li><a class="button-design" href="index.html">Home</a></li>
+            <li><a class="button-design" href="#">Directory</a></li>
+            <li><a class="button-design" href="discover.html">Discover</a></li>
+            <li><a class="button-design" href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="join-h1">Join the Chamber of Commerce in Harare, ZW</h1>
+        <div class="join-container">
+        <div class="join-form">
+            <form method="get" action="./thankyou.html" class="wf1"> 
+            <fieldset>
+                  <legend>Application Form</legend>
+                  <Label>First Name* <input type="text" name="fname" id="fname" autofocus required></label>
+                  <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                  <label>Position<input type="text" name="title" id="title" pattern="[a-zA-Z\- ]{7,}" placeholder="Applicant title/Position"></label>
+                  <label>Email* <input type="email" name="email" id="email" placeholder="user@example.com" required></label>
+                  <label>Phone* <input type="tel" name="phone" id="phone" placeholder="5551234567" required></label>
+                  <label>Business/Organization* <input type="text" name="website" placeholder="Name of your business" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Information</legend>
+                <div class="membership-options">
+
+                <label class="first-label">Select your Membership level:</label>
+                <label><input type="radio" name="membership" value="NP Membership">NP Membership </label>
+                <label><input type="radio" name="membership" value="intermediate">Bronze Membership</label>
+                <label><input type="radio" name="membership" value="advanced">Silver Membership</label>
+                <label><input type="radio" name="membership" value="advanced">Gold Membership</label>
+
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Business/Organization Information</legend>
+                    <div>
+                        <label>Description of Business/Organization
+                        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your Description here..."></textarea></label>
+                    </div>
+                    <input type="hidden" name="timestamp" id="timestamp">
+            </fieldset>
+                    <input type="submit" value="Become a Member now!" class="button">
+            </form>
+            </div>
+            <div class="membership-details">
+                <h2>Unlock Opportunities with Affordable Membership</h2>
+<p>Welcome to the Concord Chamber of Commerce, where affordable membership options are tailored to meet your needs and propel your success. Join us today and discover a world of benefits designed to support your business or organization every step of the way.</p>
+<!-- change this image later -->  
+<h3>Membership Levels:</h3>
+<ul>
+<li><strong>NP Membership:</strong> Non-profit organizations contribute immensely to our community, and we're proud to offer complimentary membership with no membership fee. Benefit from our resources and network without any financial burden, allowing you to allocate funds towards your mission.</li>
+<li><strong>Bronze Membership:</strong> Start small and dream big with our Bronze Membership package. For just $100 per year, gain access to essential resources, networking events, and promotional opportunities tailored to startups and small businesses.</li>
+<li><strong>Silver Membership:</strong> Ready to expand your reach? Our Silver Membership, priced at $250 annually, offers advanced marketing assistance, educational workshops, and increased exposure to potential clients and partners.</li>
+<li><strong>Gold Membership:</strong> Make a significant impact in our community as a Gold Member. For $500 per year, unlock priority access to Chamber events, personalized consultation services, and prominent recognition as a leader in our business community.</li>
+</ul>
+<p>At the Concord Chamber of Commerce, we believe that cost should never be a barrier to success. Our reasonably priced membership options ensure that businesses and organizations of all sizes can access the resources and support they need to thrive. Join us today and take the first step towards a brighter future with the Concord Chamber of Commerce!</p>                  
+</div>
+        </div>
+    </main>
+    <div class="underline"></div>
+    <footer>
+        <img src="images/zncclogo.png" alt="ZNCC logo">
+        <p>We are an award-winning multinational organization. We believe in quality and standards worldwide.</p>
+        <p>National Office Address: 5 Orkney Road, Eastlea, Harare</p>
+        <p>Email Us: <a href="#">zncc@gmail.org</a></p>
+        <p>Call Us: +263 24 770 244 | +263 24 277 0551 | +263 71 507 0475</p>
+        <div class="underline"></div>
+        <br>
+        <p>&copy;<span id="currentyear"></span> 💻 Tafadzwa Chingore's WDD230 Course Project 💻 📍Harare, Zimbabwe 🌇</p>
+        <p>🦋Last Modified: <span id="lastModified"></span>🦋</p>
+    </footer>
+    <script src="scripts/form.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>

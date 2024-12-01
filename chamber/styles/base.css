@@ -433,3 +433,335 @@ div#stat-data h4{
 .current-day {
   background-color: yellow; /* You can adjust the color as per your preference */
 }
+
+/*-----------------------------------------Form----------------------------------- */
+.join-form{
+  margin: 0 auto;
+  width: 95%;
+  height: auto;
+}
+.membership-details{
+  height: auto;
+} 
+form{
+  margin: 0 auto;
+  margin-top: 1em;
+  height: auto;
+  border: 3px solid red;
+}
+.wf1 fieldset{
+  margin: 0 auto;
+  border: 1px solid red;
+  border-radius: 6px;
+  padding: .5rem 1%;
+  width: 90%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+.wf1 legend{
+   padding: 0 .5rem;
+   margin: 0 auto;
+   font-size: 1.5rem;
+   font-weight: bold;
+   background-color: white;
+}
+
+.wf1 label {
+   display: block;
+   padding-top: 1rem; 
+   font-size: 1rem;
+   width: 100%;
+   margin: 0 auto;
+   text-align: left;
+}
+
+.wf1 div{
+   padding-top: 1rem;
+   font-size: .9rem;
+   width: 80%;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="date"],
+.wf1 input[type="email"],
+.wf1 input[type="number"],
+.wf1 input[type="tel"],
+.wf1 input[type="url"],
+.wf1 textarea,
+.wf1 select {
+   display: block;
+   font-size: 1rem;
+   border: 1px solid red;
+   border-radius: 6px;
+   padding: .75rem;
+   max-width: 400px;
+   background-color: white;
+   appearance: none;
+}
+.wf1 fieldset textarea#comments{
+  display: block;
+  margin-left: 1.5em;
+  margin-right:1em;
+  width: 90%;
+}
+
+.wf1 fieldset div.membership-level{
+  text-align: center;
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+   margin-right: 6px;
+}
+
+.wf1 input[type="submit"] {
+   font-size: 1rem;
+   border-radius: 6px;
+   color: white;
+   border: none;
+   padding: .75rem 1.5rem;
+   margin: -1rem 2% 2rem 2%;
+   width: 96%;
+   max-width: 400px;
+   box-shadow: 1px 1px 5px red;
+   background-image: linear-gradient(red, rgb(134, 0, 0));
+}
+.wf1 input:required{
+   border-bottom: red solid 8px;
+}
+.wf1 input:required:valid{
+   border-bottom: green solid 8px;
+}
+.join-h1{
+  color: green;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.wf1 fieldset label.first-label{
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+.join-container{
+  display:flex;
+  flex-direction: column-reverse;
+  margin: 0 auto;
+  height: fit-content;
+}
+.membership-details {
+  width: 80%; /* Adjust as needed */
+  margin: 0 auto; /* Center the container */
+  padding: 40px; /* Add padding for spacing */
+  background-color: yellow; /* Container background color */
+  border-radius: 10px; /* Rounded corners for aesthetics */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  height: auto;
+}
+
+.membership-details ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
+.membership-details h2{
+  margin-bottom: 2em;
+}
+.membership-details h3{
+  margin-bottom: 2em;
+  margin-top: 3em;
+}
+
+.membership-details li {
+  margin-bottom: 2em; /* Add spacing between list items */
+  font-size: 16px; /* Adjust font size as needed */
+}
+.membership-details img{
+  width: 100%;
+  height: auto;
+  margin-top: 1em;
+
+}
+
+/* Example: Color each list item differently */
+.membership-details li:nth-child(odd) {
+  background-color: #e0e0e0; /* Light gray background for odd items */
+}
+.membership-details li:nth-child(even) {
+  background-color: #d0d0d0; /* Dark gray background for even items */
+}
+
+/* new code for week 5 */
+.directory ul{
+  list-style-type: none;
+  
+  margin: 0;
+  padding: 10px;
+  border: #000000 1px solid;
+}
+.directory li{
+  padding: 5px 5px;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+.directory li h3{
+  text-align: center; 
+}
+
+.directory li:nth-child(odd) {
+  background-color: #e0e0e0; /* Light gray background for odd items */
+}
+.directory li:nth-child(even) {
+  background-color: #d0d0d0; /* Dark gray background for even items */
+}
+.directory-menu ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  border: #000000 1px solid;
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+.directory-menu{
+  height: 7em;
+  margin-top: .3em;
+  margin-bottom: .5em;
+  text-align: center;
+  background-color: yellow;
+}
+.directory-menu button{
+  margin-right: 1em;
+  margin-left: 1em;
+  margin-top: 1em;
+  padding: 0.5em;
+  font-size: 1.5em;
+
+}
+.directory-menu button:hover{
+  background-color: var(--background-color-primary);
+  color: var(--background-white);
+  
+}
+
+.footer-directory{
+  background-color: var(--hook-green);
+  margin-top: .5em;
+  margin: 0 auto;
+}
+ul #memberlist  {
+  width: 90%;
+}
+
+
+.member-grid {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax( 250px, 1fr)); /* Adjust as needed */
+  grid-gap: 20px;
+}
+
+/* Member grid container */
+#memberGrid {
+  display: grid;
+  grid-gap: 20px;
+}
+
+/* Member card styles */
+#memberGrid section {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+
+/* Logo styles */
+#memberGrid img {
+  width: auto;
+  max-width: 80%;
+  max-height: 100px;
+  object-fit: contain;
+  margin-bottom: 2em;
+}
+
+/* start weather forecast css here */
+
+.weather-forecast{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+  background-color: var(--background-color-primary);
+  border: 10px solid #4D5057;
+  font-size: 20pt;
+  color: var(--color-two);
+  text-align: center;
+  margin-bottom: 2em;
+}
+.forecast-day:first-child{
+  border: yellow 5px solid;
+  background-color: var(--hook-green);
+  color: var(--black);
+}
+.forecast-day:nth-child(2), .forecast-day:nth-child(3), .forecast-day:nth-child(4){
+  border: var(--color-one) 5px solid;
+  background-color: var(--background-white);
+  color: var(--black);
+}
+.member-image {
+  max-width: 100px; /* Adjust the value to your desired maximum width */
+  max-height: 100px; /* Adjust the value to your desired maximum height */
+}
+
+.member-info{
+  padding: 10px;
+  margin: 0 auto;
+  width: 200px;
+  border: #000000 1px solid;
+  height: 15em;
+}
+div.members-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10%;
+  margin-top: 1em;
+ }
+ .banner{
+  background-color: var(--hook-green);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  height: 100%;
+  width: 99%;
+  border: 1px solid var(--hook-green);
+  position: relative;
+}
+.banner-h1{
+  background-color: var(--transparent);
+  width: 70%;
+  font-size: 1em;
+  position: relative;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  padding: 20px 5px;
+}
+#closeBannerBtn{
+  position: relative;
+  width: 44px;
+  height: 44px;
+  margin-right: 1em;
+  margin-left: 1em;
+  cursor: pointer;
+}

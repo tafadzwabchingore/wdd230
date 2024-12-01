@@ -4,8 +4,6 @@
       --color-two: yellow;
       --color-one: yellow;
       --color-three: green;
-      --background-color-primary: rgb(77, 161, 103);
-      --hook-green: rgb(90, 139, 94) ;
     }
 
   header{
@@ -230,8 +228,6 @@ margin: 0 auto;
 .join-form{
     grid-column: 2/3;
     grid-row: 1;
-    background-color: var(--hook-green);
-   
 }
 .membership-details{
     grid-column: 1/2;
@@ -262,7 +258,7 @@ width: 50%;
 .wf1 input[type="url"],
 .wf1 textarea,
 .wf1 select {
-background-color:#eee;
+background-color:white;
 }
 
 div.membership-level{
@@ -290,7 +286,7 @@ margin-bottom: 1em;
 width: 80%; /* Adjust as needed */
 margin: 0 auto; /* Center the container */
 padding: 40px; /* Add padding for spacing */
-background-color: #f0f0f0; /* Container background color */
+background-color: yellow; /* Container background color */
 border-radius: 10px; /* Rounded corners for aesthetics */
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 height: auto;
@@ -312,6 +308,7 @@ margin-top: 5em;
 margin-top: 1em;
 margin-bottom: 2em; /* Add spacing between list items */
 font-size: 16px; /* Adjust font size as needed */
+border: 1px solid red;
 }
 .membership-details img{
 width: 100%;
@@ -323,10 +320,10 @@ margin-top: 1em;
 
 /* Example: Color each list item differently */
 .membership-details li:nth-child(odd) {
-background-color: #e0e0e0; /* Light gray background for odd items */
+background-color: yellow; /* #e0e0e0 Light gray background for odd items */
 }
 .membership-details li:nth-child(even) {
-background-color: #d0d0d0; /* Dark gray background for even items */
+background-color: yellow; /*#d0d0d0 Dark gray background for even items */
 }
 
 /* Member grid container */
@@ -345,7 +342,7 @@ padding: 0px 80px;
 
 /* Member card styles */
 #memberGrid section {
-background-color: #fff;
+background-color: yellow;
 border-radius: 5px;
 padding: 10px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -387,30 +384,30 @@ color: black;
 margin: 0 auto;
 width: 97%;
 height: 16em;
-background-color: var(--background-color-primary);
-border: 10px solid #4D5057;
+background-color: yellow;
+border: 10px solid red;
 font-size: 20pt;
 text-align: center;
 margin-bottom: 1em;
 }
 .forecast-day{
-border: 1px solid #4D5057;
+border: 1px solid red;
 padding: 10px;
 margin: 0 auto;
 width: 80%;
 height: 14em;
-background-color:rgba(240, 240, 240,0.5); ;
+background-color: yellow;
 
 }
 /* banner css here */
 .banner{
-background-color: var(--hook-green);
+background-color: white;
 display: block;
 text-align: center;
 margin: 0 auto;
 height: 5em;
 width: 98%;
-border: 3px solid var(--hook-green);
+border: 3px solid red;
 margin: 0 auto;
 }
 .banner-h1{
@@ -467,7 +464,6 @@ margin: 1em auto;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 3em;
-    background-color: var(--hook-green);
     position: relative;
 }
 
@@ -488,7 +484,7 @@ margin-bottom: 6em;
 }
 #discover-grid .left-side picture img{
   margin-top: 3em;
-  border: 2px solid #4E6E5D;
+  border: 2px solid red;
   
 }
 #discover-grid .left-side h3 {
@@ -507,13 +503,13 @@ padding: 20px 10px;
 }
 #discover-grid .right-side picture img{
     margin-top: 3em;
-    border: 2px solid #4E6E5D;
-    background-color: #4DA167;
+    border: 2px solid red;
+    background-color: white;
 }
 #discover-grid .right-side h3{
     text-align: center;
     padding: 10px;
-    border: 1px solid #4E6E5D;
+    border: 1px solid red;
     font-size: 20pt;
     line-height: 1.5;
     font-weight: bold;
@@ -525,7 +521,7 @@ padding: 20px 10px;
 #sidebar-content {
   background-color: var(--color-two);
   padding: 10px;
-  border: 1px solid var(--background-white);
+  border: 1px solid red;
   border-radius: 5px;
   font-size: 18px;
   line-height: 1.4;
@@ -537,7 +533,7 @@ padding: 20px 10px;
   left: -8px;
 }
 .left-side {
-  border: 3px solid var(--color-one);
+  border: 3px solid red;
   background-color: white;
   height: auto;
   margin: 0 auto;
@@ -590,15 +586,15 @@ div#stat-data h4{
 
 #discover-grid h2 {
     text-align: center;
-    background-color: #CFCFCF;
+    background-color: white;
 }
 #discover-grid p {
     text-align: center;
-    background-color: #CFCFCF;
+    background-color: white;
     font-size: 15pt;
     line-height: 1.5;
     padding: 10px;
-    border: 1px solid #4E6E5D;
+    border: 1px solid red;
 }
 .bottom:hover span {
     opacity: 1;
