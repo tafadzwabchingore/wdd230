@@ -1,0 +1,109 @@
+{
+    "companies": [
+      {
+        "name": "AnnaRose Investments",
+        "address": "13800 Madokero Estates, Tynwald North, Harare, Zimbabwe",
+        "phone": "+263912672144",
+        "website": "https://annarosei.com/",
+        "image": "images/annarose.png",
+        "membership_level": "Bronze",
+        "industry": "Investment",
+        "company_contact": {
+          "contact_person": "Sandra Musevenzo",
+          "email": "sandratmusevenzo@gmail.com"
+        }
+      },
+      {
+        "name": "House to Creatives",
+        "address": "3939 Musika Street, Harare, Zimbabwe",
+        "phone": "+263772886000",
+        "website": "http://www.housetocreatives.com/",
+        "image": "images/htc.jpg",
+        "membership_level": "Gold",
+        "industry": "Hospitality",
+        "company_contact": {
+          "contact_person": "Fiona Maseko",
+          "email": "fionamaseko@pap.com"
+        }
+      },
+      {
+        "name": "Lisha's Bakehouse",
+        "address": "13799 Creek Rd #90, Harare, Zimbabwe",
+        "phone": "+2637096000",
+        "website": "www.lisha'sbakehouse.com",
+        "image": "images/lisha.jpg",
+        "membership_level": "Gold",
+        "industry": "Hospitality",
+        "company_contact": {
+          "contact_person": "Elishama Chipare",
+          "email": "lisha@bakehouse.com"
+        }
+      },
+      {
+        "name": "The Tribe Called",
+        "address": "300 Robert Mugabe Way, Harare, Zimbabwe",
+        "phone": "+26356865880",
+        "website": "thetribecalled.org",
+        "image": "images/tribe.jpg",
+        "membership_level": "Silver",
+        "industry": "Fashion",
+        "company_contact": {
+          "contact_person": "Terrence Chipembere",
+          "email": "terrencechips@tribe.com"
+        }
+      },
+      {
+        "name": "Leassah's Gourmet",
+        "address": "1345 Bridge Road, Harare, Zimbabwe",
+        "phone": "+26356854202",
+        "website": "https://Leassah.gourmet.com/",
+        "image": "images/gourmet.jpg",
+        "membership_level": "NP Membership",
+        "industry": "NGO",
+        "company_contact": {
+          "contact_person": "Elesa Mupereki",
+          "email": "leesag@gomet.com"
+        }
+      },
+      {
+        "name": "Eunique Events",
+        "address": "640 Lomagundi Dr, Harare, Zimbabwe",
+        "phone": "+26356038000",
+        "website": "https://eunique.com/",
+        "image": "images/eunique.jpg",
+        "membership_level": "Gold",
+        "industry": "Events Planning",
+        "company_contact": {
+          "contact_person": "Eunique Rose",
+          "email": "erose@gmail.com"
+        }
+      },
+      {
+        "name": "Solarway Solutions",
+        "address": "1248 Milton Park, Harare, Zimbabwe",
+        "phone": "+26356897000",
+        "website": "https://www.solarwaysolutions.com/",
+        "image": "images/solarway.png",
+        "membership_level": "Silver",
+        "industry": "Solar Engineering Consultant",
+        "company_contact": {
+          "contact_person": "Engineer Sekanevana",
+          "email": "sekanevana@solarway.com"
+        }
+      },
+      {
+        "name": "Sista Sista Concultants",
+        "address": "1445 The Chase Road, Harare, Zimbabwe",
+        "phone": "+263774000040",
+        "website": "www.sistasista.com",
+        "image": "images/sistasista.png",
+        "membership_level": "Silver",
+        "industry": "Migration Concultancy",
+        "company_contact": {
+          "contact_person": "Hildar Chisweto",
+          "email": "hildarchi@sistasista.com"
+        }
+      }
+
+    ]
+}

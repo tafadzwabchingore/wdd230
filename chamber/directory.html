@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development 1 Chamber of Commerce Home Page">
+    <meta name="author" content="Tafadzwa Chingore">
+    <meta property="og:title" content="Tafadzwa Chingore - WDD 230 - Web Frontend Development Profile">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/561f3483e4b0930b096cad9b/1506680649152-K8MCM353GS0UQR1X0AOF/Harare-1447+copy.jpg?format=1500w">
+    <meta property="og:url" content="https://tafadzwabchingore.github.io/wdd230/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="icon" href="chamber-favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <title>Zimbabwe National Chamber of Commerce Home Page</title>
+</head>
+<body>
+    <header>
+        <br>
+        <nav>
+            <button id="myBtn"></button>
+            <ul class="menu-dirrectory">
+            <li><a class="button-design" href="index.html">Home</a></li>
+            <li><a class="button-design" href="#">Directory</a></li>
+            <li><a class="button-design" href="discover.html">Discover</a></li>
+            <li><a class="button-design" href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Concord Chamber of Commerce Business Directory</h1>
+        <div class="directory">
+            <div class="directory-menu">
+                <button id ="grid">&#9783;</button>
+                <button id ="list">&#9776;</button>
+            </div>
+            <hr>
+            <article>
+                <h2>Chamber Members</h2>
+                <div id="memberGrid" class="grid">
+                    <!-- Member cards will be dynamically added here -->
+                </div>
+            </article>
+            <hr>
+            <ul id="memberList" class="member-grid" style="display: none;">
+            <!-- Member list items will be dynamically added here -->
+            </ul>
+        </div>
+    </main>
+        <div class="underline"></div>
+    <footer>
+        <img src="images/zncclogo.png" alt="ZNCC logo">
+        <p>We are an award-winning multinational organization. We believe in quality and standards worldwide.</p>
+        <p>National Office Address: 5 Orkney Road, Eastlea, Harare</p>
+        <p>Email Us: <a href="#">zncc@gmail.org</a></p>
+        <p>Call Us: +263 24 770 244 | +263 24 277 0551 | +263 71 507 0475</p>
+        <div class="underline"></div>
+        <br>
+        <p>&copy;<span id="currentyear"></span> 💻 Tafadzwa Chingore's WDD230 Course Project 💻 📍Harare, Zimbabwe 🌇</p>
+        <p>🦋Last Modified: <span id="lastModified"></span>🦋</p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/directory.js"></script>
+</body>
+</html>
