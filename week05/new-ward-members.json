@@ -1,0 +1,23 @@
+{
+    "familyName" : "Chingore",
+    "dateMovedIn" : 2023,
+    "numberOfPeople" : 3,
+    "VisitedByBishopric" : "Yes",
+    "familyMembers" : [
+        {
+            "name" : "Hildar Chingore",
+            "gender" : "female",
+            "birthdate" : "1979-04-27"
+        },
+        {
+            "name" : "Emanuel Chingore",
+            "gender" : "male",
+            "birthdate" : "1997-12-07"
+        },
+        {
+            "name" : "Tafadzwa Chingore",
+            "gender" : "female",
+            "birthdate" : "2001-11-16"
+        }
+    ]
+}

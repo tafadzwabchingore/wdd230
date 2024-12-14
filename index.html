@@ -44,6 +44,9 @@
       <h2>WDD 230: Web Frontend Development</h2>
       <section class="card">
         <h3>Learning Activities</h3>
+        <div class="container">
+          <ul id="links-list"></ul>
+        </div>
         <ul>
           <li>Week01:<a href="#"></a></li>
           <li>Week02:<a href="#"></a></li>
@@ -59,11 +62,24 @@
             <a href="tablebuild.html">HTML Tables for Data Presentation</a> |
             <a href="week04/form-start/Form-start/index.html">HTML Forms</a>
           </li>
+          <li>Week05:
+            <a href="new-ward-members.json">JSON</a> |
+            <a href="prophets.html">The Fetch API</a>
+          </li>
         </ul>
       </section>
       <section class="card">
         <h3>Information</h3>
-        <p>Weather:</p>
+        <div class="container">
+          <div class="weather-display">
+          <h3>Weather</h3>
+          <p><span>Hometown:</span>Harare, Zimbabwe: <span id="current-temp"></span>&deg;F</p>
+          <figure>
+              <img id="weather-icon" src="weather-icon" alt="weather-icon">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+        </div>
         <p>Number of Visits: <span class ="visits"></span></p>
       </section>
     </main>
@@ -76,5 +92,7 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/getVisits.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/getWeather.js"></script>
+    <script src="scripts/links.js"></script>
   </body>
 </html>

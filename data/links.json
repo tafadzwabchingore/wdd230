@@ -1,0 +1,121 @@
+{
+    "weeks": [
+      {
+        "week": "01",
+        "links": [
+          {
+            "url": "./week01/holygrail/holygrail.html",
+            "title": "HG layout"
+          },
+          {
+            "url": "./week01/media-query/media-query.html",
+            "title": "Media Query"
+          },
+          {
+            "url": "https://codepen.io/devunfox15/pen/rNRWyYG",
+            "title": "Js pen"
+          }
+        ]
+      },
+      {
+        "week": "02",
+        "links": [
+          {
+            "url": "./week02/design.html",
+            "title": "Design Principal"
+          },
+          {
+            "url": "https://codepen.io/devunfox15/pen/gOEXJwR?editors=0110",
+            "title": "Responsive menu"
+          },
+          {
+            "url": "./week02/bom.html",
+            "title": "BOM Top Ten"
+          }
+        ]
+      },
+      {
+        "week": "03",
+        "links": [
+          {
+            "url": "./week03/images/landscape.webp",
+            "title": "WebP"
+          },
+          {
+            "url": "./week03/bom.html",
+            "title": "BOM Pt.2"
+          },
+          {
+            "url": "./week03/lazyload.html",
+            "title": "lazyload"
+          },
+          {
+            "url": "./week03/responsive-images.html",
+            "title": "Responsive images"
+          }
+
+        ]
+      },
+      {
+        "week": "04",
+        "links": [
+          {
+            "url": "https://codepen.io/devunfox15/pen/jOJovyd",
+            "title": "Pseudo activities"
+          },
+          {
+            "url": "./week04/images/Screenshot (85).png",
+            "title": "w3 schools"
+          },
+          {
+            "url": "./week04/tablebuild.html",
+            "title": "Html Tables"
+          },
+          {
+            "url": "./week04/form-start/Form-start/index.html",
+            "title": "Web form"
+          }
+        ]
+      },
+      {
+        "week": "05",
+        "links": [
+          {
+            "url": "https://codepen.io/devunfox15/pen/GRLpGBq",
+            "title": "Pseudo-elements"
+          },
+          {
+            "url": "./week05/new-ward-members.json",
+            "title": "json Ward Family"
+          },
+          {
+            "url": "./week05/prophets.html",
+            "title": "prophets"
+          },
+          {
+            "url": "./week05/weather.html",
+            "title": "Weather api"
+          }
+        ]
+      }
+      ,
+      {
+        "week": "06",
+        "links": [
+          {
+          
+          }
+        ]
+      },
+      {
+        "week": "07",
+        "links": [
+          { 
+          
+          }
+        ]
+      }
+    
+    ]
+  }
+ 
