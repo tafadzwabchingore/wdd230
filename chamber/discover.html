@@ -29,7 +29,7 @@
             <ul class="menu-dirrectory">
             <li><a class="button-design" href="index.html">Home</a></li>
             <li><a class="button-design" href="directory.html">Directory</a></li>
-            <li><a class="button-design" href="discover.html">Discover</a></li>
+            <li class="active"><a class="button-design" href="discover.html">Discover</a></li>
             <li><a class="button-design" href="join.html">Join</a></li>
             </ul>
         </nav>
@@ -39,11 +39,9 @@
         <h1>Discover</h1>
         <div class="underline"></div>
         <!-- This is the top section -->
+        <h3>ZNCC SUBMIT INPUT INTO THE 2024 NATIONAL BUDGET AND FISCAL POLICY REVIEW</h3>
         <div id="discover-grid">
         <div class="top">
-            <div id="sidebar-content">Welcome!!!</div>
-            <br>
-            <h3>ZNCC SUBMIT INPUT INTO THE 2024 NATIONAL BUDGET AND FISCAL POLICY REVIEW</h3>
             <picture>
                 <source media="(max-width: 500px)" srcset="images/event04.webp">
                 <img src="images/event04.webp" alt="Image Settings" loading="lazy">
@@ -54,6 +52,9 @@
                 <p>Zimbabwe National Chamber of Commerce is a non-profit making membership-based organization that provides services designed to support its members in business development.</p>
                 <p>As an independent organisation, the ZNCC has represented the interests of its members for over 100 years especially through advocacy and provides a focus on business empowerment as the engine for economic growth.</p>
             </div>
+            <div class="sidebar">
+                <div id="visit-message"></div>
+            </div>
         </div>
         <!-- This is the left section -->
         <div class="left-side">
@@ -61,7 +62,7 @@
                 <h3 id="month">Month</h3>
                 <div id="calendar"></div>
             </div>
-            
+            <div class="underline"></div>
             <div id="demographics">
                 <h3>🤝 Our Values</h3>
                 <p>HONESTY</p>
@@ -72,12 +73,6 @@
                 <p>PROFESSIONALISM</p>
             </div>
             <div id="stat-data">
-                <div class="underline"></div>
-                <picture>
-                    <source media="(max-width: 600px)" srcset="./images/data-picture-sm.webp">
-                    <source media="(max-width: 1400px)" srcset="./images/data-picture-md.webp">
-                <img src="./images/data-picture-lg.webp" alt="Image Settings" loading="lazy">
-                </picture>
                 <div class="underline"></div>
                 <h3>Statistical Data</h3>
                 <h4>Buisness climate:</h4>
@@ -139,7 +134,7 @@
                 <img src="./images/background.jpg" alt="Image Settings" loading="lazy">  
             </picture> 
             </a>
-        </div>
+        </div>    
     </main>
     <footer>
         <img src="images/zncclogo.png" alt="ZNCC logo">
@@ -156,5 +151,7 @@
     <script src="scripts/chamber.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/localStorage.js"></script>
+    <script src="scripts/discover.js"></script>
+    <script src="scripts/calender.js"></script>
 </body>
 </html>

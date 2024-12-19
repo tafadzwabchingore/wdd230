@@ -152,7 +152,7 @@ header h1 {
 }
 
 .active::before { 
-	content: "📍";  /* just a wayfinding symbol for the user */
+	content: "✨";  /* just a wayfinding symbol for the user */
   background-color: rgba(0, 0, 0, 0.3); /* produces darker color*/
 }
 

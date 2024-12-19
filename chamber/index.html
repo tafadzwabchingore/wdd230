@@ -26,18 +26,26 @@
         <div>
             <img class="hero" src="images/hero.jpg" alt="Zimbabwe National Chamber of Commerce Staff" loading="lazy">
         </div>
+        <br>
         <nav>
             <button id="myBtn"></button>
             <ul class="menu-dirrectory">
-            <li><a class="button-design" href="index.html">Home</a></li>
+            <li class="active"><a class="button-design" href="index.html">Home</a></li>
             <li><a class="button-design" href="directory.html">Directory</a></li>
             <li><a class="button-design" href="discover.html">Discover</a></li>
             <li><a class="button-design" href="join.html">Join</a></li>
             </ul>
         </nav>
     </header>
-
+    
     <main>
+        <br>
+        <div>
+            <div class="banner" id="chamberBanner">
+                <h2 class="banner-h1">You are invited to attend the chamber of commerce meet and greet on Wednesday at 7:00 p.m.</h2>
+                <button id="closeBannerBtn">x</button>
+            </div>
+        </div>
         <h1>Zimbabwe National Chamber of Commerce</h1>
         <div class="underline"></div>
         <div class="photos">
@@ -62,8 +70,36 @@
     <div class="underline"></div>
     
     <h2>Weather Forecast</h2>
+    <h2>4-Day Weather Forecast</h2>
     <div class="weather-forecast">
-        <p>Weather Data Will be Displayed Here.</p>
+        <div class="forecast-day highlight-border">
+            <h3 id="today">Day</h3>
+            <h2 class="date">Date</h2>
+            <p class="forecast-temp">Temp</p>
+            <img class="forecast-icon" src="./images/" alt="weather-icon" loading="lazy">
+            <p class="forecast-description">words</p>
+        </div>
+        <div class="forecast-day">
+            <h3 id="tomorrow">day</h3>
+            <h2 class="date">date</h2>
+            <p class="forecast-temp">temp</p>
+            <img class="forecast-icon"  src="./images/" alt="weather-icon" loading="lazy">
+            <p class="forecast-description">word</p>
+        </div>
+        <div class="forecast-day">
+            <h3 id="dayAfterTomorrow">day</h3>
+            <h2 class="date">date</h2>
+            <p class="forecast-temp">temp</p>
+            <img class="forecast-icon"  src="./images/" alt="weather-icon" loading="lazy">
+            <p class="forecast-description">words</p>
+        </div>
+        <div class="forecast-day">
+            <h3 id="dayAfterAfterTomorrow">day</h3>
+            <h2 class="date">date</h2>
+            <p class="forecast-temp">temp</p>
+            <img class="forecast-icon"  src="./images/" alt="weather-icon" loading="lazy">
+            <p class="forecast-description">words</p>
+        </div>
     </div>
     <div class="underline"></div>
     <div class="chamber-div">
@@ -78,16 +114,13 @@
             <div class="about-Our-Chamber-img"><img src="images/zncc.jpg" alt="zncc building" loading="lazy"></div>
     </div>
     <div>
-
-        <!-- this is where i will place random members with gold and silver status -->
+        <!-- Members will be dynamically inserted here by JavaScript -->
         <h2 class="members">Members' Spotlight</h2>
-        <p>Members Displayed Here</p>
         <div class="underline"></div>
         <div class="members-container">
-            <!-- Members will be dynamically inserted here by JavaScript -->
-        </div>
     </div>
-    <h3>learn more on our <a href="#">directory</a> page about how to join the chamber!</h3>
+    </div>
+    <h3>How To Join? Click<a href="join.html">Here</a></h3>
     <div class="underline"></div>
     <section class="event-box">
     <h2>Upcoming Events</h2>
@@ -110,16 +143,17 @@
             <br>
             <p>Registration Details</p>
             <p>For more details on registration, fees, and the training schedule,
-                 please visit the <a href="#">ZNCC</a> website or <a href="#">contact us</a> directly via email or phone.</p>
+                 please visit the <a href="index.html">ZNCC</a> website or <a href="discover.html">contact us</a> directly via email or phone.</p>
+
+
         </div>
-        <h2 class="calander-home">Current calender</h2>
-        <div class="events-container" id="eventsContainer"></div>
     </div>
     </section>
-        <div id="calling-Action">
-<!-- background picture needs to go behind the text -->
-            <h2>Come join us to jumpstart your business.</h2>
-        </div>
+    <div class="bottom2">
+        <a href="discover.html">
+            <span>Learn More On Our Discover Page!</span>
+        </a>
+    </div>
         </main>
         <div class="underline"></div>
     <footer>
@@ -136,5 +170,8 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/chamber.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/get-weather.js"></script>
+    <script src="scripts/members.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>
